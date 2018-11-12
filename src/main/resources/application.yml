@@ -1,12 +1,12 @@
-person:
-  lastName: zhangsan
-  age: 18
-  boss: false
-  birth: 1988/11/11
-  maps: {k1: v1,k2: 12,k3: test}
-  lists:
-    - number1
-    - number2
-  dog:
-    petName: 佩奇
-    petAge: 2
+#person:
+#  lastName: zhangsan
+#  age: 18
+#  boss: false
+#  birth: 1988/11/11
+#  maps: {k1: v1,k2: 12,k3: test}
+#  lists:
+#    - number1
+#    - number2
+#  dog:
+#    petName: 佩奇
+#    petAge: 2

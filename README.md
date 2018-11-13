@@ -5,3 +5,6 @@
 使用JSR303数据校验<br>
 但如何自定义JSR303数据校验注解?<br>
 在bean中使用@Value<br>
+<hr>
+<br>
+学习两个注解: @PropertySource , @ImportResource <br>

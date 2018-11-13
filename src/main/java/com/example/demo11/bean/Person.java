@@ -1,11 +1,12 @@
 package com.example.demo11.bean;
 
+import com.example.demo11.validator.annotation.IDValidator;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.validator.constraints.Length;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
@@ -20,6 +21,7 @@ import java.util.Map;
  *    prefix = "person"; 配置文件中哪个下面的所有属性进行一一映射
  *
  * 只有这个组件是容器中的组件,才能使用容器提供的@ConfigurationProperties功能;
+ * @ConfigurationProperties(prefix = "person")默认从全局配置文件中获取值.
  */
 
 
@@ -31,6 +33,7 @@ import java.util.Map;
 @ConfigurationProperties(prefix = "person")
 @Validated  //配合ConfigurationProperties注解进行JSR303数据校验
 @Component
+@PropertySource(value = {"classpath:person.properties"})
 public class Person {
 
     /**
@@ -49,6 +52,9 @@ public class Person {
     private String mobile;
 //    @Value("#{11*2}")
     private Integer age;
+
+    @IDValidator
+    private String idnumber;
 //    @Value("true")
     private boolean boss;
 //    @Value("${person.birth}")

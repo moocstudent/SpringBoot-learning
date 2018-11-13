@@ -1,0 +1,5 @@
+<root>
+    <item name='org.springframework.boot.context.properties.source.ConfigurationPropertyName.ElementsParser'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

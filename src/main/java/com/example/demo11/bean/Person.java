@@ -33,7 +33,7 @@ import java.util.Map;
 @ConfigurationProperties(prefix = "person")
 @Validated  //配合ConfigurationProperties注解进行JSR303数据校验
 @Component
-@PropertySource(value = {"classpath:person.properties"})
+//@PropertySource(value = {"classpath:person.properties"})
 public class Person {
 
     /**

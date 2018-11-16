@@ -8,3 +8,4 @@
 <hr>
 <br>
 学习两个注解: @PropertySource , @ImportResource <br>
+配置文件的优先级和指定方式<br>

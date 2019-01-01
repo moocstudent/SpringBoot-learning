@@ -1,5 +1,6 @@
 package com.example.demo11;
 
+import com.example.demo11.bean.BossMan;
 import com.example.demo11.bean.Person;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -30,5 +31,14 @@ public class Demo11ApplicationTests {
     public void contextLoads() {
         System.out.println(person);
     }
+
+    @Autowired
+    private BossMan bossMan;
+
+    @Test
+    public void testMan(){
+      System.out.println(bossMan);
+    }
+
 
 }
